@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "NNN-Skipper",
+  "version": "1.3",
+
+  "description": "レポート動画を自動的にスキップし、快適なレポート環境を提供します。",
+
+  "icons": {
+    "255": "static/border-48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://secure.nnn.ed.jp/mypage/report/pc/movie/*","https://secure.nnn.ed.jp/mypage/report/pc/test/*"],
+      "js": ["body.js"]
+    }
+  ],
+"browser_action": {
+    "default_icon": "static/border-48.png",
+    "default_title": "NNN_Skipper",
+    "default_popup": "options/options.html",
+    "browser_style": true
+  }
+}
