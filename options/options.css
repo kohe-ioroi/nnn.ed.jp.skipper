@@ -1,0 +1,15 @@
+body {
+    background-color: blue;
+    color: white
+}
+
+.creator {
+    color: whitesmoke;
+    text-decoration: underline
+}
+.center{
+    color:gray;
+    font-size: larger;
+    text-align: center;
+    border-radius:5px;
+}
