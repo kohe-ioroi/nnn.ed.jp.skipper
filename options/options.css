@@ -7,9 +7,10 @@ body {
     color: whitesmoke;
     text-decoration: underline
 }
-.center{
-    color:gray;
+
+.center {
+    color: gray;
     font-size: larger;
     text-align: center;
-    border-radius:5px;
+    border-radius: 5px;
 }

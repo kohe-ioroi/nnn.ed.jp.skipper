@@ -9,11 +9,24 @@ function saveOptions(e) {
 
 function restoreOptions() {
   function setCurrentChoice(result) {
-    if (result.skip=="True"){document.getElementById("skip_true").setAttribute("checked","true")}else{document.getElementById("skip_false").setAttribute("checked","true")};
-    if (result.autostart=="True"){document.getElementById("autostart_true").setAttribute("checked","true")}else{document.getElementById("autostart_false").setAttribute("checked","true")};
-    if (result.playedalert=="True"){document.getElementById("alert_true").setAttribute("checked","true")}else{document.getElementById("alert_false").setAttribute("checked","true")};
+    if (result.skip == "True") {
+      document.getElementById("skip_true").setAttribute("checked", "true")
+    } else {
+      document.getElementById("skip_false").setAttribute("checked", "true")
+    };
+    if (result.autostart == "True") {
+      document.getElementById("autostart_true").setAttribute("checked", "true")
+    } else {
+      document.getElementById("autostart_false").setAttribute("checked", "true")
+    };
+    if (result.playedalert == "True") {
+      document.getElementById("alert_true").setAttribute("checked", "true")
+    } else {
+      document.getElementById("alert_false").setAttribute("checked", "true")
+    };
   };
-  function onError(){};
+
+  function onError() {};
   browser.storage.local.get().then(setCurrentChoice, onError);
 }
 document.addEventListener("DOMContentLoaded", restoreOptions);
