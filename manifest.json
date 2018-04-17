@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "NNN-Skipper",
-  "version": "1.4",
+  "version": "1.5",
 
   "description": "レポート動画を自動的にスキップし、快適なレポート環境を提供します。",
 
@@ -15,7 +15,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://secure.nnn.ed.jp/mypage/report/pc/movie/*","https://secure.nnn.ed.jp/mypage/report/pc/test/*"],
+      "matches": ["https://www.nnn.ed.nico/courses/*/chapters/*"],
       "js": ["body.js"]
     }
   ],
