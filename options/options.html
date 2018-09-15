@@ -13,27 +13,32 @@
   <center class="center">NNN-Skipper</center>
   <form id="settingform">
     <p>
-      <label>スキップ設定
-        <input type="radio" id="skip_true" name="skip" value="True">有効
-        <input type="radio" id="skip_false" name="skip" value="False">無効</p>
-    </label>
+      <span style="text-align:left;">スキップ設定</span>
+      <span style="text-align:right;"><label><input type="radio" id="skip_true" name="skip" value="true">有効</label>
+        <label><input type="radio" id="skip_false" name="skip" value="false">無効</label></span>
+    </p>
     <p>
-      <label>自動再生設定(美術)
-        <input type="radio" id="autostart_true" name="autostart" value="True">有効
-        <input type="radio" id="autostart_false" name="autostart" value="False">無効</p>
-    </label>
+      <span style="text-align:left;">再生完了アラート</span>
+      <span style="text-align:right;"><label><input type="radio" id="alert_true" name="playedalert" value="true">有効</label>
+        <label><input type="radio" id="alert_false" name="playedalert" value="false">無効</label></span>
+    </p>
+    <!-- <p>
+      未実装オプション
+      <label><input type="radio" id="automute_true" name="automute" value="true">有効</label>
+      <label><input type="radio" id="automute_false" name="automute" value="false">無効</label></p>
     <p>
-      <label>再生完了アラート
-        <input type="radio" id="alert_true" name="playedalert" value="True">有効
-        <input type="radio" id="alert_false" name="playedalert" value="False">無効</p>
-    </label>
+      未実装オプション
+      <label><input type="radio" id="autostart_true" name="autostart" value="true">有効</label>
+      <label><input type="radio" id="autostart_false" name="autostart" value="false">無効</label></p> -->
+
     <div class="center">
       <button type="radio">Save</button>
     </div>
   </form>
   <script src="options.js"></script>
   <p>
-    <a class="creator" href="https://twitter.com/Kohe_Ioroi/">作者</a>
+    <a class="creator" href="https://twitter.com/Kohe_Ioroi/">作者(動作報告もこちら)</a>
+    <br>設定を変更した後は再読込してください。<br>Ctrl+Mでタブをミュートすることができます。
   </p>
 
 </body>

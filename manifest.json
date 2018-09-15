@@ -4,7 +4,7 @@
   "name": "NNN-Skipper",
   "version": "1.5",
 
-  "description": "レポート動画を自動的にスキップし、快適なレポート環境を提供します。",
+  "description": "快適なレポート環境を提供します。",
 
   "icons": {
     "255": "static/border-48.png"
