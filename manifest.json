@@ -1,8 +1,8 @@
 {
 
   "manifest_version": 2,
-  "name": "NNN-Skipper",
-  "version": "1.5",
+  "name": "nnn.ed.jp.skipper",
+  "version": "1.6",
 
   "description": "快適なレポート環境を提供します。",
 
@@ -11,17 +11,21 @@
   },
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs"
   ],
   "content_scripts": [
     {
       "matches": ["https://www.nnn.ed.nico/courses/*/chapters/*"],
-      "js": ["body.js"]
+      "js": ["scripts/body.js"]
     }
   ],
+  "background":{
+    "scripts":["scripts/background.js"]
+  },
 "browser_action": {
     "default_icon": "static/border-48.png",
-    "default_title": "NNN_Skipper",
+    "default_title": "nnn.ed.jp.skipper",
     "default_popup": "options/options.html",
     "browser_style": true
   }
